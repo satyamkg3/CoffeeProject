@@ -1,0 +1,28 @@
+<br>
+
+<div>
+    <form #data="ngForm" (ngSubmit)="allSize(data)">
+      <input type="submit" value = "Show Size"> 
+    </form>
+    
+    <div *ngIf="size">
+        <p *ngFor = "let c of size">
+            {{c.sizeID}}-{{c.sizeName}}-{{c.price}}
+            <br>
+        </p>
+    </div>
+</div>
+
+<br>
+<!--
+<div>
+    <form #data="ngForm" (ngSubmit)="sizeById(data)">
+      Enter Size ID: <input type="text" name ="id" ngModel>
+      <input type="submit" value = "Search"> 
+    </form>
+    
+    <div *ngIf="sizeid">
+      {{sizeid.sizeID}}-{{sizeid.sizeName}}-{{sizeid.price}}
+    </div>
+</div>
+-->

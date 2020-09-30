@@ -1,0 +1,28 @@
+<br>
+
+<div>
+    <form #data="ngForm" (ngSubmit)="allOffers(data)">
+      <input type="submit" value = "Show Offers"> 
+    </form>
+    
+    <div *ngIf="offer">
+        <p *ngFor = "let c of offer">
+            {{c.couponID}}-{{c.couponName}}-{{c.minCost}}-{{c.percentage}}
+            <br>
+        </p>
+    </div>
+</div>
+
+<br>
+<!--
+<div>
+    <form #data="ngForm" (ngSubmit)="couponById(data)">
+      Enter Coupon ID: <input type="text" name ="id" ngModel>
+      <input type="submit" value = "Search"> 
+    </form>
+    
+    <div *ngIf="offerid">
+        {{offerid.couponID}}-{{offerid.couponName}}-{{offerid.minCost}}-{{offerid.percentage}}
+    </div>
+</div>
+-->

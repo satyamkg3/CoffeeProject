@@ -1,0 +1,19 @@
+<br>
+
+<div>
+    <form #data="ngForm" (ngSubmit)="bill(data)">
+      <label>Enter Coffee ID:</label><br>  
+      <input type="text" name ="coffeeid" ngModel><br><br>
+      <label>Enter AddOnID:</label>
+      <input type="text" name ="addonid" ngModel><br><br>
+      <label></label>
+      <input type="text" name ="sizeid" ngModel><br><br>
+      <label></label>
+      <input type="text" name ="couponid" ngModel><br><br>
+      <input type="submit" value = "Place Order"> 
+    </form>
+    
+    <div *ngIf="orderid">
+      {{orderid}}
+    </div>
+</div>

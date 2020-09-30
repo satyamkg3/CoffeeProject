@@ -1,0 +1,28 @@
+<br>
+
+<div>
+    <form #data="ngForm" (ngSubmit)="addons(data)">
+      <input type="submit" value = "Show AddOns"> 
+    </form>
+    
+    <div *ngIf="addon">
+        <p *ngFor = "let c of addon">
+            {{c.addOnID}}-{{c.addOnName}}-{{c.price}}
+            <br>
+        </p>
+    </div>
+</div>
+
+<br>
+<!--
+<div>
+    <form #data="ngForm" (ngSubmit)="addonById(data)">
+      Enter AddOn ID: <input type="text" name ="id" ngModel>
+      <input type="submit" value = "Search"> 
+    </form>
+    
+    <div *ngIf="addon">
+      {{addon.addOnID}}-{{addon.addOnName}}-{{addon.price}}
+    </div>
+</div>
+-->

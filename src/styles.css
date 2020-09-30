@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.nav a{
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav a:hover{
+    background-color: black;
+    color: cyan;
+}
+
+body
+{
+    background-color: cadetblue;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    
+}
+td{
+    align-content: center;
+}
+tr{
+    line-height: 30px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr:hover{
+    background-color: chocolate;
+}
+
+a:link, a:visited{
+    background-color: coral;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.header{
+    background-color: coral;
+    padding: 20px;
+    text-align: center;
+}
+.links
+{
+    overflow: hidden;
+    background-color: goldenrod;
+    alignment: center;
+}
+.links a
+{
+    float: end;
+    display: block;
+    color:aliceblue;
+    text-align: center;
+}
+.links a:hover
+{
+    background-color: black;
+    color: blanchedalmond;
+}
+

@@ -1,0 +1,40 @@
+<link href="/styles.css" rel="stylesheet" type="text/css">
+<br>
+<div>
+    <form #data="ngForm" (ngSubmit)="coffees(data)">
+      <input type="submit" value = "Show Coffee"> 
+    </form>
+    
+    <div *ngIf="coffee">
+      <table>
+        <!--
+        <tr>
+            <th>CoffeeID</th>
+            <th>Coffee Name</th>
+            <th>Price</th>
+        </tr>
+        -->
+        <p *ngFor = "let c of coffee">
+          <tr>
+            <td>{{c.coffeeID}}</td>
+            <td>{{c.coffeeName}}</td>
+            <td>{{c.price}}</td>
+          </tr>
+        </p>
+      </table>
+    </div>
+</div>
+
+<br>
+<!--
+<div>
+    <form #data="ngForm" (ngSubmit)="coffeeById(data)">
+      Enter Coffee ID: <input type="text" name ="id" ngModel>
+      <input type="submit" value = "Search"> 
+    </form>
+    
+    <div *ngIf="coffeeid">
+      {{coffeeid.coffeeID}}-{{coffeeid.coffeeName}}-{{coffeeid.price}}
+    </div>
+</div>
+-->
